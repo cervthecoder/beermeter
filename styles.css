@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5e6c3;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  background-color: #ffebc2;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  transition: max-width 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    padding: 3rem;
+  }
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  color: #6b4200;
+}
+
+/* Beer emoji animation */
+.beer-emoji {
+  font-size: 64px;
+  animation: pulse 1.5s infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #a55728;
+  color: #fdf5e6;
+}
+
+td {
+  background-color: #ffe8c2;
+  color: #6b4200;
+}
+
+/* Styling for names in the first column */
+td:first-child {
+  font-weight: bold;
+  font-size: 1.1em; /* Slightly larger font size */
+}
+
+tr:nth-child(even) td {
+  background-color: #fcd9a1;
+}
+
